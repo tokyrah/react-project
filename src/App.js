@@ -1,24 +1,56 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import NotFound from './pages/NotFound';
+//import { useState } from 'react';
+import { Layout } from './components/Layout';
+import { LayoutV2 } from './components/LayoutV2';
+import Links from './pages/Links';
+import Plan from './pages/Plan';
+
+/*function setToken(userToken) {
+  sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken(userToken) {
+
+} */
 
 function App() {
+  //const token = getToken();
+  //const [token, setToken] = useState(true);
+
+  /* if (token) {
+    return (
+      <>
+        <Login setToke={setToken} />
+      </>
+    );
+  } */
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        {/* <Navbar /> */}
+        <Routes>
+          <Route path="/" element={<Layout />} >
+            <Route path="/" element={<Home />} />
+            <Route path="links" element={<Links />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="plan" element={<Plan />} />
+          </Route>
+
+          {/* <Route  element={<LayoutV2 />}>
+
+          </Route> */}
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
