@@ -2,9 +2,10 @@
 
 ### Run `npm install`
 
-### Run `npm start`
+### Run the json servern `npm run server`
 
-Runs the app in the development mode.\
+### Runs the app in the development mode `npm start`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\

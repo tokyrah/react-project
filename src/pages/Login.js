@@ -3,7 +3,7 @@ import { Box, Button, Container, TextField, Typography } from '@mui/material';
 import { useFormik } from 'formik';
 import { Navigate, Link } from 'react-router-dom';
 import * as Yup from 'yup';
-import logoDark from '../card-killer-logo-dark.jpg';
+import logoDark from '../logo-dark.svg';
 
 const Login = (props) => {
     const [confirm, setConfirm] = useState(false);
@@ -65,7 +65,7 @@ const Login = (props) => {
                             variant="subtitle3"
                             component="div"
                         >
-                            CARD KILLER
+                           MY APP
                         </Typography>
                     </Box>
                     <form onSubmit={formik.handleSubmit}>

@@ -1,7 +1,7 @@
 import { AppBar, Box, IconButton, Toolbar } from '@mui/material';
 import React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
-import logoWhite from '../card-killer-logo-white.jpg';
+import logoWhite from '../logo-white.svg';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 

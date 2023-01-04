@@ -3,7 +3,7 @@ import { Box, Button, Container, TextField, Typography } from '@mui/material';
 import { useFormik } from 'formik';
 import { Navigate, Link } from 'react-router-dom';
 import * as Yup from 'yup';
-import logoDark from '../card-killer-logo-dark.jpg';
+import logoDark from '../logo-dark.svg';
 
 function Register() {
     const [confirm, setConfirm] = useState(false);
@@ -68,12 +68,12 @@ function Register() {
                         <img style={{ maxWidth: '100%', width: '45px' }} src={logoDark} alt="Logo" />
                         <Typography
                             sx={{ fontWeight: '600', pt: .5 }}
-                            color="textDark"
+                            /* color="textDark" */
                             variant="subtitle3"
                             component="div"
                             color="GrayText.dark"
                         >
-                            CARD KILLER
+                            MY APP
                         </Typography>
                     </Box>
                     <form onSubmit={formik.handleSubmit}>

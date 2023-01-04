@@ -1,5 +1,4 @@
 import { Box } from '@mui/system';
-import React, { useState } from 'react';
 import CreateLink from '../components/Links/CreateLink';
 import LinkItem from '../components/Links/LinkItem';
 import { FakeLinks } from '../__mocks__/FakeLinks';

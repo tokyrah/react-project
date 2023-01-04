@@ -1,13 +1,13 @@
 import React from "react";
-/* import { Container, Typography, Divider } from "@mui/material";
+import { Container, Typography, Divider } from "@mui/material";
 import { Box } from "@mui/system";
-import { AccountMenu } from "../components/Account/AccountMenu"; */
+import { AccountMenu } from "../components/Account/AccountMenu";
 
 function Account() {
 
     return (
         <>
-            {/* <Box
+           <Box
                 component="main"
                 sx={{
                     alignItems: 'center',
@@ -46,7 +46,7 @@ function Account() {
                     />
                     <AccountMenu />
                 </Container>
-            </Box> */}
+            </Box>
         </>
     )
 }
